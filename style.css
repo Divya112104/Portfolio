@@ -1,0 +1,204 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #222;
+   background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+    color: rgb(80, 75, 75);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.nav__logo {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.nav__link:hover,
+.nav__link.active-link {
+    background: #38bdf8;
+}
+
+/* ===== HOME ===== */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+    min-height: 90vh;
+    text-align: center;
+}
+
+.home__content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__img img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #38bdf8;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.home__text h1 {
+    font-size: 2rem;
+}
+
+.home__text h1 span {
+    color: #38bdf8;
+}
+
+.home__text h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.home__text p {
+    max-width: 500px;
+    margin: auto;
+    font-size: 1rem;
+    color: #555;
+}
+
+.home__social a {
+    color: #1e293b;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.home__social a:hover {
+    color: #38bdf8;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 4rem 20px;
+}
+
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #1e293b;
+    position: relative;
+}
+
+.section__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 3px;
+    background: #38bdf8;
+    border-radius: 2px;
+}
+
+.section__content {
+    background: rgb(157, 207, 240);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact__form input,
+.contact__form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+    border-color: #38bdf8;
+    outline: none;
+}
+
+.button {
+    display: inline-block;
+    background: #38bdf8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #0ea5e9;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
